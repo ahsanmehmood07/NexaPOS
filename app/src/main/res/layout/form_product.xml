@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/space_m">
+
+    <LinearLayout
+        style="@style/NexaCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/NexaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:text="@string/label_product_name" />
+
+        <EditText
+            android:id="@+id/etProductName"
+            style="@style/NexaInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:hint="@string/hint_product_name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/NexaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_category" />
+
+        <Spinner
+            android:id="@+id/spCategory"
+            style="@style/NexaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:entries="@array/product_categories" />
+
+        <TextView
+            style="@style/NexaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_sale_price" />
+
+        <EditText
+            android:id="@+id/etSalePrice"
+            style="@style/NexaInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:hint="@string/hint_money"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            style="@style/NexaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_purchase_price" />
+
+        <EditText
+            android:id="@+id/etPurchasePrice"
+            style="@style/NexaInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:hint="@string/hint_money"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            style="@style/NexaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_quantity" />
+
+        <EditText
+            android:id="@+id/etQuantity"
+            style="@style/NexaInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:hint="@string/hint_qty"
+            android:inputType="number" />
+
+        <CheckBox
+            android:id="@+id/cbTaxable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_s"
+            android:buttonTint="@color/nexa_accent"
+            android:text="@string/check_taxable"
+            android:textColor="@color/nexa_ink" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAddProduct"
+                style="@style/NexaButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_s"
+                android:layout_weight="1"
+                android:text="@string/btn_add_product" />
+
+            <Button
+                android:id="@+id/btnClearProduct"
+                style="@style/NexaButton.Soft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_s"
+                android:layout_weight="1"
+                android:text="@string/btn_clear" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/NexaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_xs"
+        android:text="@string/list_products" />
+</LinearLayout>

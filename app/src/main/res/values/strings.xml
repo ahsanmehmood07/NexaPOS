@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Nexa POS</string>
+    <string name="tagline">Sell, buy and track stock with ease</string>
+    <string name="dashboard_hint">What would you like to do today?</string>
+
+    <string name="menu_products">Products</string>
+    <string name="menu_customers">Customers</string>
+    <string name="menu_sale">Sale</string>
+    <string name="menu_purchase">Purchase</string>
+    <string name="menu_reports">Reports</string>
+    <string name="tile_products">📦\nProducts</string>
+    <string name="tile_customers">👥\nCustomers</string>
+    <string name="tile_sale">🧾\nSale</string>
+    <string name="tile_purchase">🚚\nPurchase</string>
+    <string name="tile_reports">📊\nReports</string>
+
+    <string name="label_product_name">Product name</string>
+    <string name="hint_product_name">e.g. Basmati Rice 5 kg</string>
+    <string name="label_category">Category</string>
+    <string name="label_sale_price">Sale price</string>
+    <string name="label_purchase_price">Purchase price</string>
+    <string name="label_quantity">Quantity</string>
+    <string name="hint_money">0.00</string>
+    <string name="hint_qty">0</string>
+    <string name="check_taxable">Taxable item</string>
+    <string name="btn_add_product">Add product</string>
+    <string name="btn_clear">Clear</string>
+    <string name="list_products">Your products (long press to delete)</string>
+
+    <string name="label_customer_name">Customer name</string>
+    <string name="hint_customer_name">e.g. Ali Raza</string>
+    <string name="label_phone">Phone number</string>
+    <string name="hint_phone">03XX XXXXXXX</string>
+    <string name="label_address">Address</string>
+    <string name="hint_address">e.g. Saddar, Rawalpindi</string>
+    <string name="label_customer_type">Customer type</string>
+    <string name="type_retail">Retail</string>
+    <string name="type_wholesale">Wholesale</string>
+    <string name="btn_add_customer">Add customer</string>
+    <string name="list_customers">Your customers (long press to call)</string>
+
+    <string name="label_product">Product</string>
+    <string name="label_price">Price</string>
+    <string name="label_payment">Payment method</string>
+    <string name="pay_cash">Cash</string>
+    <string name="pay_card">Card</string>
+    <string name="pay_credit">Credit</string>
+    <string name="discount_zero">Discount: 0%</string>
+    <string name="discount_value">Discount: %1$d%%</string>
+    <string name="btn_select_customer">Select customer</string>
+    <string name="customer_none">No customer selected</string>
+    <string name="customer_selected">Customer: %1$s</string>
+    <string name="walk_in">Walk-in customer</string>
+    <string name="label_total">Total</string>
+    <string name="money_zero">Rs. 0.00</string>
+    <string name="money_format">Rs. %1$.2f</string>
+    <string name="stock_available">In stock: %1$d</string>
+    <string name="btn_complete_sale">Complete sale</string>
+    <string name="btn_complete_purchase">Complete purchase</string>
+    <string name="label_payment_status">Payment status</string>
+    <string name="status_paid">Paid</string>
+    <string name="status_unpaid">Unpaid</string>
+
+    <string name="label_report">Choose a report</string>
+    <string name="total_sales">Total sales: Rs. %1$.2f</string>
+    <string name="total_purchases">Total purchases: Rs. %1$.2f</string>
+    <string name="total_stock">Total stock value: Rs. %1$.2f</string>
+    <string name="stock_line">%1$s  •  %2$d pcs  •  Rs. %3$.2f</string>
+    <string name="row_qty">Qty: %1$d</string>
+
+    <string name="msg_fill_all">Please fill in all required fields</string>
+    <string name="msg_product_exists">This product already exists</string>
+    <string name="msg_product_added">Product added</string>
+    <string name="msg_product_deleted">%1$s removed</string>
+    <string name="msg_customer_added">Customer added</string>
+    <string name="msg_customer_selected">Selected: %1$s</string>
+    <string name="msg_select_product">Please add and select a product first</string>
+    <string name="msg_enter_quantity">Enter a valid quantity</string>
+    <string name="msg_no_stock">Not enough stock available</string>
+    <string name="msg_sale_done">Sale completed</string>
+    <string name="msg_purchase_done">Purchase saved</string>
+
+    <string-array name="product_categories">
+        <item>Grocery</item>
+        <item>Beverages</item>
+        <item>Snacks</item>
+        <item>Household</item>
+        <item>Personal Care</item>
+    </string-array>
+
+    <string-array name="payment_methods">
+        <item>Cash</item>
+        <item>Card</item>
+        <item>Credit</item>
+    </string-array>
+
+    <string-array name="report_types">
+        <item>Sales Report</item>
+        <item>Purchase Report</item>
+        <item>Stock Report</item>
+    </string-array>
+</resources>

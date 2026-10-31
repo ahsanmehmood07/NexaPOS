@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_s">8dp</dimen>
+    <dimen name="space_m">16dp</dimen>
+    <dimen name="space_l">24dp</dimen>
+    <dimen name="radius">16dp</dimen>
+    <dimen name="field_pad">12dp</dimen>
+    <dimen name="btn_pad">14dp</dimen>
+    <dimen name="text_label">13sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <dimen name="text_heading">28sp</dimen>
+    <dimen name="text_title">34sp</dimen>
+    <dimen name="tile_height">120dp</dimen>
+    <dimen name="tile_margin">6dp</dimen>
+</resources>

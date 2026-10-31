@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nexa_bg"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/NexaHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/menu_purchase" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomPanel"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/space_m">
+
+            <LinearLayout
+                style="@style/NexaCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/NexaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:text="@string/label_product" />
+
+                <Spinner
+                    android:id="@+id/spProduct"
+                    style="@style/NexaSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xs" />
+
+                <TextView
+                    style="@style/NexaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_purchase_price" />
+
+                <EditText
+                    android:id="@+id/etPrice"
+                    style="@style/NexaInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xs"
+                    android:hint="@string/hint_money"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    style="@style/NexaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_quantity" />
+
+                <EditText
+                    android:id="@+id/etQty"
+                    style="@style/NexaInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xs"
+                    android:hint="@string/hint_qty"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/NexaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_payment_status" />
+
+                <ToggleButton
+                    android:id="@+id/tbStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_xs"
+                    android:background="@drawable/bg_toggle"
+                    android:checked="true"
+                    android:minWidth="140dp"
+                    android:textColor="@color/nexa_ink"
+                    android:textOff="@string/status_unpaid"
+                    android:textOn="@string/status_paid" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_panel"
+        android:elevation="8dp"
+        android:padding="@dimen/space_m">
+
+        <TextView
+            android:id="@+id/tvTotalLabel"
+            style="@style/NexaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTotal"
+            android:layout_alignParentStart="true"
+            android:paddingTop="0dp"
+            android:text="@string/label_total" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/money_zero"
+            android:textColor="@color/nexa_accent"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCompletePurchase"
+            style="@style/NexaButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTotal"
+            android:layout_marginTop="@dimen/space_s"
+            android:text="@string/btn_complete_purchase" />
+    </RelativeLayout>
+</RelativeLayout>

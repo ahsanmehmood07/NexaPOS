@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nexa_ink">#1F2A37</color>
+    <color name="nexa_bg">#F6F4EF</color>
+    <color name="nexa_card">#FFFFFF</color>
+    <color name="nexa_accent">#0F766E</color>
+    <color name="nexa_accent_soft">#D5EDE8</color>
+    <color name="nexa_muted">#6B7280</color>
+    <color name="nexa_hint">#A8A29E</color>
+    <color name="nexa_border">#E3DED4</color>
+    <color name="nexa_danger">#C62828</color>
+    <color name="nexa_danger_soft">#FBE4E4</color>
+    <color name="tile_peach">#FDE6D3</color>
+    <color name="tile_sky">#DCEAFB</color>
+    <color name="tile_mint">#D9F0E3</color>
+    <color name="tile_lilac">#EBDDF3</color>
+    <color name="tile_butter">#FFF0C2</color>
+</resources>

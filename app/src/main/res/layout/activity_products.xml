@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nexa_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/NexaHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_products" />
+
+    <ListView
+        android:id="@+id/listProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="@dimen/space_m"
+        android:scrollbars="none" />
+</LinearLayout>
